@@ -10,16 +10,15 @@ public abstract class Bicicleta extends Thread {
 	public void run(){
 		Integer i = 0;
 		String tipo;
+		
 		if(this.getClass().getSimpleName().contains("Montana")) {
 			tipo = "montaña";
 		} else {
 			tipo = "carretera";
 		}
-		while(i < this.tiempo) {
-			i++;
-		}
+		
 		if(tiempo < 60) {
-			System.out.println("La bicicleta de " + tipo + " " + this.identificador + " se retiró en el segundo " + i + ".");
+			System.out.println("La bicicleta de " + tipo + " " + this.identificador + " se retiró en el segundo " + this.tiempo + ".");
 		} else {
 			System.out.println("La bicicleta de " + tipo + " " + this.identificador + " llegó a la meta.");
 		}
