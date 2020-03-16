@@ -1,4 +1,4 @@
-package practicas.practica1;
+package practicas.practica1.sesion1;
 
 public abstract class Bicicleta extends Thread {
 
@@ -8,7 +8,6 @@ public abstract class Bicicleta extends Thread {
 	
 	@Override
 	public void run(){
-		Integer i = 0;
 		String tipo;
 		
 		if(this.getClass().getSimpleName().contains("Montana")) {

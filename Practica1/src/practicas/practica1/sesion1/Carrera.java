@@ -1,4 +1,4 @@
-package practicas.practica1;
+package practicas.practica1.sesion1;
 
 import java.util.ArrayList;
 import java.util.Collections;
